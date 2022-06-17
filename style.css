@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Poppins:wght@400;600;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-size:70%;
+    background-position: top;
+    background-color: hsl(0, 100%, 74%);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .container{
+    width: 90%;
+    margin: 5rem auto;
+} */
+
+.big_text{
+    font-size: 26px;
+    color: #fff;
+}
+
+.text{
+    color: hsl(240, 3%, 93%);
+}
+
+.col_first{
+    text-align: center;
+    width: 86%;
+    margin: 4rem auto 0;
+}
+
+.regist_col{
+    width: 90%;
+    margin: 3rem auto;
+}
+
+.top_btn{
+    background-color: hsl(248, 32%, 49%);
+    border: none;
+    border-radius: 10px;
+    color: hsl(249, 14%, 90%);
+    padding: 25px 90px;
+    width: 100%;
+    box-shadow: 0 7px 1px rgba(0, 0, 0, 0.156);
+}
+
+.bold_textb{
+    font-weight: bolder;
+    color: #fff;   
+}
+
+.form{
+    margin: 3rem 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 1px rgba(0, 0, 0, 0.156);
+    padding: 1rem;
+}
+
+.input{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 13px 125px 13px 10px;
+    margin: 10px 0;
+    
+}
+
+.btm_btn{
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    box-shadow: 0 3px 1px hsl(154, 53%, 42%);
+}
+
+
+ .input:required:invalid {
+    outline: none;
+    border: none;
+    border: 1px solid hsl(0, 100%, 74%);
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+  }
+
+  
+  
+
+  .form_card[data-error] .input{
+	border-color: hsl(0, 80%, 75%) ;
+	color: hsl(0, 100%, 74%);
+	background: #FFFAFA;
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 16rem;
+    background-origin: content-box;
+}
+    .form_card[data-error]::after{
+	content:attr(data-error);
+	color: hsl(0, 100%, 74%);
+	margin: -5px 0px 0px 130px;
+	font-size: 12px;
+	display: block;
+	
+}
+.btm_text{
+    width: 90%;
+    font-size: 12px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.60);
+    margin: 0.5rem auto;
+}
+
+.text_red{
+    color: hsl(0, 100%, 74%);
+}
+
+@media (min-width: 1024px){
+    
+    ::-webkit-input-placeholder {
+        /* WebKit browsers */
+         color: transparent;}
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url(./images/bg-intro-mobile.png);
+        background-repeat: repeat;
+        background-size: initial;
+    }
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin: 3rem 0;
+    }
+
+    .regist_col{
+        margin: 3rem auto 0;
+    }
+
+    .col_first{
+        width: 90%;
+        margin: 0;
+        text-align: left;
+    }
+
+    .big_text{
+        font-size: 48px;
+        line-height: 50px;
+        margin-bottom: 2rem;
+    }
+
+    .input{
+        padding: 13px 10px;
+        width: 97%;
+    }
+
+    .input:required:invalid {
+        outline: none;
+        border: none;
+        border: 1px solid hsl(0, 100%, 74%);
+        background-image: url(./images/icon-error.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-origin: content-box;
+      }
+
+      .form_card[data-error] .input{
+        border-color: hsl(0, 80%, 75%) ;
+        color: hsl(0, 100%, 74%);
+        background: #FFFAFA;
+        background-image: url(./images/icon-error.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-origin: content-box;
+    }
+        .form_card[data-error]::after{
+        content:attr(data-error);
+        color: hsl(0, 100%, 74%);
+        margin: -5px 0px 0px 314px;
+        font-size: 12px;
+        display: block;
+        
+    }
+
+}

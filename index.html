@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Registration</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col col_first">
+                    <h3 class="big_text">Learn to code by watching others</h3>
+                    <p class="text">See some experienced developers solve problems in real time. Watching srcipted tutorials is great, but understanding how developers think is invaluable</p>
+                </div>
+
+                <div class="col regist_col">
+                    <button class="top_btn"><span class="bold_textb">Try it free 7 days</span> then $20/mo. thereafter</button>
+                    <form action="#" class="form">
+                        <div class="form_card" data-error="First Name cannot be empty">
+                            <!-- <img src="./images/icon-error.svg" alt="icon-error" class="icon_error"> -->
+                            <input type="text" name="fname" class="input" maxlenth= "6" minlength= "3" required placeholder="First Name">
+                        </div>
+
+                        <div class="form_card" data-error="Last Name cannot be empty">
+                            <!-- <img src="./images/icon-error.svg" alt="icon-error" class="icon_error"> -->
+                            <input type="text" name="lname" class="input" maxlenth= "6" minlength= "3" required placeholder="Last Name">
+                        </div>
+
+                        <div class="form_card" data-error="Looks like this is not an email">
+                            <!-- <img src="./images/icon-error.svg" alt="icon-error" class="icon_error"> -->
+                            <input type="email" name="email" id="email" class="input" placeholder="Email Address" required>
+                        </div>
+
+                        <div class="form_card" data-error="Password cannot be empty" >
+                            <!-- <img src="./images/icon-error.svg" alt="icon-error" class="icon_error"> -->
+                            <input type="password" name="password" id="password"  class="input" pattern required="(?=.*d)(?=.*[a-z])(?.*[A-Z]).(8,)" placeholder="Password">
+                        </div>
+
+                        <button class="btm_btn">CLAIM YOUR FREE TRIAL</button>
+
+                        <p class="btm_text">By clicking the button, you are agreeing to our <span class="text_red">Terms and Services</span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
